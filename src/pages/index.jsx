@@ -14,6 +14,7 @@ import { Testimonials } from '../components/Testimonials'
 import avatarImage1 from '../images/avatars/avatar-1.png'
 import avatarImage2 from '../images/avatars/avatar-2.png'
 import FancyHero from "../components/hero/FancyHero";
+import MeetOurTeam from "../components/MeetOurTeam";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </Head>
       <FancyHero />
       <Introduction />
+      <MeetOurTeam />
       <NavBar />
       <TableOfContents />
       <Testimonial
