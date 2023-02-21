@@ -5,18 +5,17 @@ import clsx from 'clsx'
 
 const sections = [
   {
-    id: 'table-of-contents',
+    id: 'programma',
     title: (
       <>
-        <span className="hidden lg:inline">Table of contents</span>
+        <span className="hidden lg:inline">Programma</span>
         <span className="lg:hidden">Contents</span>
       </>
     ),
   },
-  { id: 'screencasts', title: 'Screencasts' },
-  { id: 'resources', title: 'Resources' },
-  { id: 'pricing', title: 'Pricing' },
-  { id: 'author', title: 'Author' },
+  { id: 'digital-set-builder', title: 'Digital set builder\n' },
+  { id: 'immersive-storyboard', title: 'Immersive Storyboard' },
+  { id: 'pitch-consult', title: 'Pitch consult' },
 ]
 
 function MenuIcon({ open, ...props }) {
@@ -56,8 +55,7 @@ export function NavBar() {
 
       for (let index = 0; index < elements.length; index++) {
         if (
-          window.scrollY >=
-          elements[index].getBoundingClientRect().top - offset
+          window.scrollY >= elements[index].getBoundingClientRect().top - offset
         ) {
           newActiveIndex = index
         } else {

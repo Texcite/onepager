@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
-export default function FancyHero() {
+export function FancyHero() {
     return (
         <div className="relative isolate overflow-hidden bg-white">
             <svg
@@ -23,11 +23,11 @@ export default function FancyHero() {
             </svg>
             <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:py-40 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-                    <img
-                        className="h-11"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company"
-                    />
+                    {/*<img*/}
+                    {/*    className="h-11"*/}
+                    {/*    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"*/}
+                    {/*    alt="Your Company"*/}
+                    {/*/>*/}
                     <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                         Texcite
                     </h1>
@@ -36,10 +36,10 @@ export default function FancyHero() {
                     </p>
                     <div className="mt-10 flex items-center gap-x-6">
                         <a
-                            href="#table-of-contents"
+                            href="#introduction"
                             className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
-                            Get started
+                        Bekijk concepten
                         </a>
                     </div>
                 </div>

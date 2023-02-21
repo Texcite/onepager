@@ -1,13 +1,14 @@
 import Image from 'next/image'
 
-import { Container } from './Container'
-import { SectionHeading } from './SectionHeading'
+import { Container } from '../components/Container'
+import { SectionHeading } from '../components/SectionHeading'
 import abstractBackgroundImage from '../images/resources/abstract-background.png'
 import discordImage from '../images/resources/discord.svg'
 import figmaImage from '../images/resources/figma.svg'
 import videoPlayerImage from '../images/resources/video-player.svg'
+import AlternateContent from "../components/sections/AlternateContent";
 
-const resources = [
+const immersiveStoryboard = [
   {
     title: 'Figma icon templates',
     description:
@@ -57,20 +58,19 @@ const resources = [
   },
 ]
 
-export function Resources() {
+export function ImmersiveStoryBoard() {
   return (
     <section
-      id="resources"
+      id="immersive-storyboard"
       aria-labelledby="resources-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
         <SectionHeading number="3" id="resources-title">
-          Resources
+          Immersive Storyboard
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
+        <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+          Maak een immersive ervaring van jouw concept of idee!
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
           Design assets, icon teardowns, and a community of fellow icon
@@ -79,29 +79,22 @@ export function Resources() {
         </p>
       </Container>
       <Container size="lg" className="mt-16">
-        <ol
-          role="list"
-          className="-mx-3 grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
-        >
-          {resources.map((resource) => (
-            <li
-              key={resource.title}
-              className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
-            >
-              <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
-                <resource.image />
-              </div>
-              <div>
-                <h3 className="text-base font-medium tracking-tight text-slate-900">
-                  {resource.title}
-                </h3>
-                <p className="mt-2 text-sm text-slate-600">
-                  {resource.description}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <AlternateContent features={[
+          {
+            name: 'Minimal and thoughtful',
+            description:
+                'Our laptop sleeve is compact and precisely fits 13" devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.',
+            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-01.jpg',
+            imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
+          },
+          {
+            name: 'Refined details',
+            description:
+                'We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.',
+            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-02.jpg',
+            imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
+          },
+        ]}/>
       </Container>
     </section>
   )

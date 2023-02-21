@@ -29,7 +29,7 @@ const people = [
     // More people...
 ]
 
-export default function MeetOurTeam() {
+export function MeetOurTeam() {
     return (
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">

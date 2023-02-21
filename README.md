@@ -28,7 +28,7 @@ This site template is a commercial product and is licensed under the [Tailwind U
 
 ## Learn more
 
-To learn more about the technologies used in this site template, see the following resources:
+To learn more about the technologies used in this site template, see the following immersiveStoryboard:
 
 - [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
