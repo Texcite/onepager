@@ -3,7 +3,7 @@ import { Expandable } from './Expandable'
 import { SectionHeading } from './SectionHeading'
 
 const tableOfContents = {
-  'Getting started': {
+  'Concepten': {
     'Digital set builder': 1,
     'Immersive storyboard': 2,
     'Pitch consult': 3,
@@ -18,17 +18,17 @@ export function TableOfContents() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32 bg-gray-100"
     >
       <Container>
-        <SectionHeading number="1" id="programma-title">
+        {/* <SectionHeading number="1" id="programma-title">
           Programma
-        </SectionHeading>
+        </SectionHeading> */}
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Get a look at all of the content covered in the book. Everything you
-          need to know is inside.
+          Onze oplossingen 
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          “Everything Starts as a Square” is comprised of 240 tightly edited,
-          highly visual pages designed to teach you everything you need to know
-          about icon design with no unnecessary filler.
+          Wij zijn gekomen tot drie soorten concepten. 
+          Het eerste concept is een out of the box concept op basis van de design vraag. 
+          Het tweede concept sluit nauw op de vraag en 
+          het laatste concept slaat op de vraag met de suggestie van de NPO over Artificiële intelligence.
         </p>
         <Expandable>
           {({ isExpanded }) => (
