@@ -47,7 +47,7 @@ export function FancyHero() {
                     <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
                         <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                             <img
-                                src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+                                src="https://www.vn.nl/wp-content/uploads/2022/11/npo-liggend-1280x720.jpg"
                                 alt="App screenshot"
                                 width={2432}
                                 height={1442}
