@@ -24,7 +24,7 @@ export function TableOfContents() {
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
           Onze oplossingen 
         </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
+        <p className="mt-4 concept-body-text">
           Wij zijn gekomen tot drie soorten concepten. 
           Het eerste concept is een out of the box concept op basis van de design vraag. 
           Het tweede concept sluit nauw op de vraag en 
@@ -69,7 +69,6 @@ export function TableOfContents() {
                     </li>
                   ))}
               </ol>
-              <Expandable.Button>See more</Expandable.Button>
             </>
           )}
         </Expandable>
