@@ -2,58 +2,11 @@ import Image from 'next/image'
 
 import {Container} from '../components/Container'
 import {SectionHeading} from '../components/SectionHeading'
-import duotoneImage from '../images/screencasts/duotone.svg'
-import gridsImage from '../images/screencasts/grids.svg'
-import setupImage from '../images/screencasts/setup.svg'
-import strokesImage from '../images/screencasts/strokes.svg'
-import TwoColumnContent from "../components/sections/TwoColumnContent";
+import { CheckIcon } from '../components/CheckIcon'
+import headerImage from '../images/resources/talkshow.png'
+import chairEdit from '../images/resources/chairedit.png'
+import presenting from '../images/resources/presenting.gif'
 
-const videos = [
-    {
-        title: 'Getting started with Figma',
-        description:
-            'Get familiar with the Figma UI, the different tools it offers, and the most important features.',
-        image: setupImage,
-        runtime: {minutes: 16, seconds: 54},
-    },
-    {
-        title: 'Setting up your artboard',
-        description:
-            'Learn how to create a new artboard and configure your grid and rulers for designing icons.',
-        image: gridsImage,
-        runtime: {minutes: 9, seconds: 12},
-    },
-    {
-        title: 'Designing your first icon',
-        description:
-            'Using basic shapes and boolean operations, learn how to design your own notification icon from scratch.',
-        image: strokesImage,
-        runtime: {minutes: 23, seconds: 25},
-    },
-    {
-        title: 'Advanced design techniques',
-        description:
-            'Learn the techniques you need to know to adapt your original icon to a modern duotone style.',
-        image: duotoneImage,
-        runtime: {minutes: 28, seconds: 44},
-    },
-]
-
-function PlayIcon(props) {
-    return (
-        <svg
-            aria-hidden="true"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            viewBox="0 0 16 16"
-            {...props}
-        >
-            <path d="M6.75 10.25v-4.5L10.25 8l-3.5 2.25Z"/>
-            <circle cx="8" cy="8" r="6.25" fill="none"/>
-        </svg>
-    )
-}
 
 export function DigitalSetBuilder() {
     return (
@@ -66,32 +19,83 @@ export function DigitalSetBuilder() {
                 <SectionHeading number="2" id="digital-set-builder-title">
                     Digital set builder
                 </SectionHeading>
-                <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+                <p className="mt-8 concept-title">
                     Een web-applicatie waarbij je een omgeving kan creëren om je idee visueel te representeren.
                 </p>
-                <p className="mt-4 text-lg tracking-tight text-slate-700">
-                    Learn how to design your very first icons in a series of screencasts
-                    that will teach you everything you need to know to go from beginner to
-                    pro in just over an hour.
+                <div className="overflow-hidden rounded-lg mt-16">
+                    <Image src={headerImage} alt="" unoptimized />
+                </div>
+                <p className="mt-8 concept-short-description">
+                Wanneer een idee in iemands hoofd zit, is het vaak al volledig gevormd en visueel duidelijk. 
+                Het kan echter moeilijk zijn om dit idee aan anderen uit te leggen, omdat zij niet altijd in staat zijn om het visueel voor zich te zien. 
+                Met behulp van Digital Set Builder streven we ernaar dit probleem op te lossen en de presentatie van het idee te versterken.
                 </p>
             </Container>
-            <Container size="lg" className="mt-16">
-                <TwoColumnContent sections={[
-                    {
-                        name: 'Minimal and thoughtful',
-                        description:
-                            'Our laptop sleeve is compact and precisely fits 13" devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.',
-                        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-01.jpg',
-                        imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
-                    },
-                    {
-                        name: 'Refined details',
-                        description:
-                            'We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.',
-                        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-02.jpg',
-                        imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
-                    },
-                ]}/>
+            <Container size='lg' className="mt-24 flex flex-row justify-between items-center">
+                <div className='w-1/2'>
+                    <p className="font-display concept-subtitle">
+                        Creëer je set   
+                    </p>
+                    <ul role="list" className="mt-8 space-y-3">
+                            {[
+                                'Kies objecten uit de inventaris',
+                                'Zet objecten neer in je omgeving',
+                                'Vrijheid waar je deze objecten wilt gaan plaatsen',
+                            ].map((feature) => (
+                                <li key={feature} className="flex">
+                                    <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+                                    <span className="ml-4 concept-body-text">{feature}</span>
+                                </li>
+                            ))}
+                    </ul>
+                </div>
+                <div className='overflow-hidden rounded-lg'>
+                    <Image src={chairEdit} alt="" unoptimized height="350" width="350" />
+                </div>       
+            </Container>
+            <Container className="mt-16">
+                <p className="font-display concept-subtitle">
+                    Loop rond in je omgeving en speel je idee uit
+                </p>
+                <p className="mt-8 concept-body-text">
+                    Nu de set gereed is, kun je je idee beter uitbeelden met behulp van de objecten die je in je set hebt geplaatst.
+                    De enige stap die nu nog over is, is om je idee uit te spelen en op te nemen!
+                </p>
+                <ul role="list" className="mt-8 space-y-3">
+                            {[
+                                'Beweeg door je gemaakte set',
+                                'Neem het op',
+                            ].map((feature) => (
+                                <li key={feature} className="flex">
+                                    <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+                                    <span className="ml-4 concept-body-text">{feature}</span>
+                                </li>
+                            ))}
+                </ul>
+                <div className="overflow-hidden rounded-lg mt-16">
+                    <Image src={presenting} alt="" unoptimized width="800"/>
+                </div>
+                </Container> 
+                <Container className="mt-16">  
+                <p className="font-display concept-subtitle">
+                    Technologie
+                </p>
+                <p className="mt-8 concept-body-text">
+                Het idee is om een web-applicatie te ontwikkelen die gebruik maakt van een 3D engine javascript library waarbij 
+                we weer gebruik maken van een framework om daarmee vervolgens de "Most valueble product" in het prototype kunnen aantonen.
+                </p>
+                <ul role="list" className="mt-8 space-y-3">
+                            {[
+                                'Three.js',
+                                'A-frame',
+                                'PlayCanvas',
+                            ].map((feature) => (
+                                <li key={feature} className="flex">
+                                    <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+                                    <span className="ml-4 concept-body-text" >{feature}</span>
+                                </li>
+                            ))}
+                </ul>
             </Container>
         </section>
     )
