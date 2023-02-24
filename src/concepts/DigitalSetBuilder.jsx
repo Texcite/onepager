@@ -44,7 +44,7 @@ export function DigitalSetBuilder() {
                             ].map((feature) => (
                                 <li key={feature} className="flex">
                                     <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
-                                    <span className="ml-4">{feature}</span>
+                                    <span className="ml-4 concept-body-text">{feature}</span>
                                 </li>
                             ))}
                     </ul>
@@ -57,7 +57,7 @@ export function DigitalSetBuilder() {
                 <p className="font-display concept-subtitle">
                     Loop rond in je omgeving en speel je idee uit
                 </p>
-                <p className="mt-8 text-lg tracking-tight text-slate-700">
+                <p className="mt-8 concept-body-text">
                     Nu de set gereed is, kun je je idee beter uitbeelden met behulp van de objecten die je in je set hebt geplaatst.
                     De enige stap die nu nog over is, is om je idee uit te spelen en op te nemen!
                 </p>
@@ -68,7 +68,7 @@ export function DigitalSetBuilder() {
                             ].map((feature) => (
                                 <li key={feature} className="flex">
                                     <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
-                                    <span className="ml-4">{feature}</span>
+                                    <span className="ml-4 concept-body-text">{feature}</span>
                                 </li>
                             ))}
                 </ul>
@@ -77,10 +77,10 @@ export function DigitalSetBuilder() {
                 </div>
                 </Container> 
                 <Container className="mt-16">  
-                <p className="font-display text-5xl font-extrabold tracking-tight text-slate-900">
+                <p className="font-display concept-subtitle">
                     Technologie
                 </p>
-                <p className="mt-8 text-lg tracking-tight text-slate-700">
+                <p className="mt-8 concept-body-text">
                 Het idee is om een web-applicatie te ontwikkelen die gebruik maakt van een 3D engine javascript library waarbij 
                 we weer gebruik maken van een framework om daarmee vervolgens de "Most valueble product" in het prototype kunnen aantonen.
                 </p>
@@ -92,7 +92,7 @@ export function DigitalSetBuilder() {
                             ].map((feature) => (
                                 <li key={feature} className="flex">
                                     <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
-                                    <span className="ml-4">{feature}</span>
+                                    <span className="ml-4 concept-body-text" >{feature}</span>
                                 </li>
                             ))}
                 </ul>
