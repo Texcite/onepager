@@ -31,7 +31,7 @@ export function DigitalSetBuilder() {
                 Met behulp van Digital Set Builder streven we ernaar dit probleem op te lossen en de presentatie van het idee te versterken.
                 </p>
             </Container>
-            <Container size='lg' className="mt-24 flex flex-row justify-between items-center">
+            <Container size='lg' className="mt-24 flex flex-row justify-between items-center py-32">
                 <div className='w-1/2'>
                     <p className="font-display concept-subtitle">
                         Creëer je set   
@@ -53,7 +53,7 @@ export function DigitalSetBuilder() {
                     <Image src={chairEdit} alt="" unoptimized height="350" width="350" />
                 </div>       
             </Container>
-            <Container className="mt-16">
+            <Container className="mt-16" >
                 <p className="font-display concept-subtitle">
                     Loop rond in je omgeving en speel je idee uit
                 </p>
@@ -76,7 +76,7 @@ export function DigitalSetBuilder() {
                     <Image src={presenting} alt="" unoptimized width="800"/>
                 </div>
                 </Container> 
-                <Container className="mt-16">  
+                <Container className="mt-16 py-32">  
                 <p className="font-display concept-subtitle">
                     Technologie
                 </p>
