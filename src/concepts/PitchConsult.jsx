@@ -6,6 +6,8 @@ import {Container} from '../components/Container'
 import {GridPattern} from '../components/GridPattern'
 import {SectionHeading} from '../components/SectionHeading'
 import AlternateContent from "../components/sections/AlternateContent";
+import ScreenTwo from "/public/assets/pitch-consult/screen-2.png"
+import Image from "next/image";
 
 function Plan({name, description, price, features, href, featured}) {
     return (
@@ -102,10 +104,10 @@ export function PitchConsult() {
                 <SectionHeading number="4" id="pitch-consult-title">
                     Pitch consult
                 </SectionHeading>
-                <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+                <h2 className="concept-title">
                     Een chatbot en jou sparring partner tijdens het uitwerken van je idee.
-                </p>
-                <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
+                </h2>
+                <p className="concept-short-description">
                     “Everything Starts as a Square” is available in two different packages
                     so you can pick the one that’s right for you.
                 </p>
@@ -114,18 +116,50 @@ export function PitchConsult() {
                 <AlternateContent features={[
                     {
                         name: 'Minimal and thoughtful',
-                        description:
-                            'Our laptop sleeve is compact and precisely fits 13" devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.',
-                        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-01.jpg',
+                        description: "Ideeën bedenken kan iedereen. Wanneer je het idee wilt uitwerken kan je er echter al snel achter komen dat je idee niet zo sterk was dan dat je dacht. Je moet dus nog aan het werk om je idee perfect te maken. Pitch Consult helpt je hierbij.\n" +
+                            "\n" +  "\n" +
+                            "Pitch Consult is een online chatbot en jou sparring partner tijdens het uitwerken van je idee.",
+                        imageSrc: '/assets/pitch-consult/screen-1.png',
                         imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
-                    },
+                        maxHeight: 400,
+                        maxWidth: 350,
+                        reverse: false
+                    }
+                ]}/>
+            </Container>
+            <Container size="lg" className="mt-16 flex flex-row items-center justify-between">
+                <Image src={ScreenTwo} height={400} width={400} alt="Screenshot"/>
+                <div>
+                    <h3 className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 ">Wat kan
+                        het?</h3>
+                    <ul role="list" className="mt-8 space-y-3">
+                        {[
+                            'Feedback geven op je idee op basis van soortgelijke series\n',
+                            'Nieuwe inzichten geven over je idee',
+                            'Tips geven om je idee te verduidelijken/verbeteren.',
+                            'Laten weten of een soortgelijk idee al is afgewezen/geproduceerd.',
+                        ].map((feature) => (
+                            <li key={feature} className="flex font-semibold">
+                                <CheckIcon className="h-8 w-8 flex-none fill-blue-500"/>
+                                <span className="ml-4">{feature}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </Container>
+            <Container size="lg" className="mt-16">
+                <AlternateContent features={[
                     {
-                        name: 'Refined details',
-                        description:
-                            'We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.',
-                        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-02.jpg',
-                        imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
-                    },
+                        name: 'Spar met je online partner',
+                        description: "Door kort je idee te vertellen aan Pitch Consult kan hij je feedback geven op basis van eerder gemaakte, soortgelijke, series. Zo kan hij je vertellen welke overeenkomsten jouw idee heeft met een andere serie, welke onderdelen compleet uniek zijn, welke onderdelen eerder zijn afgewezen en welke onderdelen eerder zijn goedgekeurd.\n" +
+                            "\n" +
+                            "Door Pitch Consult te gebruiken kan jij jouw idee aanscherpen en verduidelijken zodat er een grotere kans is dat het aangenomen wordt om verwerkt te worden tot een echte serie. Daarbij is het ook nog eens fijn om met iemand te praten over je idee!",
+                        imageSrc: '/assets/pitch-consult/screen-1.png',
+                        imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
+                        maxHeight: 400,
+                        maxWidth: 350,
+                        reverse: false
+                    }
                 ]}/>
             </Container>
         </section>

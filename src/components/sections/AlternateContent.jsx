@@ -39,7 +39,10 @@ export default function AlternateContent({features}) {
                     {features.map((feature, featureIdx) => (
                         <div
                             key={feature.name}
-                            className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8"
+                            className={classNames(
+                                "flex  lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8",
+                                feature.reverse ? "flex-col-reverse" : "flex-col"
+                            )}
                         >
                             <div
                                 className={classNames(
@@ -47,8 +50,9 @@ export default function AlternateContent({features}) {
                                     'mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4'
                                 )}
                             >
-                                <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
-                                <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
+                                <h3 className="mt-8 font-display text-5xl font-extrabold  text-slate-900 ">{feature.name}</h3>
+
+                                <p className="concept-body-text">{feature.description}</p>
                             </div>
                             <div
                                 className={classNames(
@@ -56,8 +60,8 @@ export default function AlternateContent({features}) {
                                     'flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8'
                                 )}
                             >
-                                <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-                                    <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+                                <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg  flex justify-center items-center w-full">
+                                    <img src={feature.imageSrc} height={feature.maxHeight ? feature.maxHeight : 800} width={feature.maxWidth ? feature.maxWidth : 800} alt={feature.imageAlt} className="object-cover object-center" />
                                 </div>
                             </div>
                         </div>
