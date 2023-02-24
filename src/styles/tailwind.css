@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+    .concept-title {
+        @apply mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl;
+    }
+    .concept-subtitle{
+        @apply mt-8 font-display text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl;
+    }
+    .concept-short-description {
+        @apply mt-4 text-lg font-semibold text-gray-600;
+    }
+    .concept-body-text{
+        @apply  text-lg font-semibold text-gray-800;
+    }
+}

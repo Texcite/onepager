@@ -7,7 +7,7 @@ export function Introduction() {
     return (
         <section
             id="introduction"
-            aria-label="Introduction"
+            aria-label="programma"
             className="pt-20 pb-16 sm:pb-20 md:pt-36 lg:py-32"
         >
             <Container className="text-lg tracking-tight text-slate-700">

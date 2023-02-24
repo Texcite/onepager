@@ -25,12 +25,10 @@ export default function Home() {
             </Head>
             <FancyHero/>
             <MeetOurTeam/>
-            <Introduction/>
-            <NavBar/>
+            {/*<Introduction/>*/}
             <TableOfContents/>
             {/*<Testimonial*/}
             {/*  id="testimonial-from-tommy-stroman"*/}
-
             {/*>*/}
             {/*  <p>*/}
             {/*    “I didn’t know a thing about icon design until I read this book. Now I*/}
@@ -38,10 +36,10 @@ export default function Home() {
             {/*  </p>*/}
             {/*</Testimonial>*/}
             <DigitalSetBuilder/>
-
             <ImmersiveStoryBoard/>
             {/*<FreeChapters />*/}
             <PitchConsult/>
+            <NavBar/>
             {/*<Testimonials />*/}
             {/* <Author/> */}
             <Footer/>

@@ -15,7 +15,7 @@ export function TableOfContents() {
     <section
       id="programma"
       aria-labelledby="programma-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32 bg-gray-100"
+      className="scroll-mt-2 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32 bg-gray-100"
     >
       <Container>
         {/* <SectionHeading number="1" id="programma-title">

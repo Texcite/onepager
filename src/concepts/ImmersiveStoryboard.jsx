@@ -62,11 +62,11 @@ export function ImmersiveStoryBoard() {
   return (
     <section
       id="immersive-storyboard"
-      aria-labelledby="resources-title"
+      aria-labelledby="immersive-storyboard-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="3" id="resources-title">
+        <SectionHeading number="3" id="immersive-storyboard-title">
           Immersive Storyboard
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
