@@ -82,7 +82,7 @@ export function DigitalSetBuilder() {
                 </p>
                 <p className="mt-8 concept-body-text">
                 Het idee is om een web-applicatie te ontwikkelen die gebruik maakt van een 3D engine javascript library waarbij 
-                we weer gebruik maken van een framework om daarmee vervolgens de "Most valueble product" in het prototype kunnen aantonen.
+                we weer gebruik maken van een framework om daarmee vervolgens de "Most viable product" in het prototype kunnen aantonen.
                 </p>
                 <ul role="list" className="mt-8 space-y-3">
                             {[
