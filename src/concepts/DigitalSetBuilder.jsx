@@ -12,20 +12,20 @@ export function DigitalSetBuilder() {
     return (
         <section
             id="digital-set-builder"
-            aria-labelledby="screencasts-title"
+            aria-labelledby="digital-set-builder-title"
             className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
         >
             <Container>
-                <SectionHeading number="2" id="screencasts-title">
+                <SectionHeading number="2" id="digital-set-builder-title">
                     Digital set builder
                 </SectionHeading>
-                <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+                <p className="mt-8 concept-title">
                     Een web-applicatie waarbij je een omgeving kan creëren om je idee visueel te representeren.
                 </p>
                 <div className="overflow-hidden rounded-lg mt-16">
                     <Image src={headerImage} alt="" unoptimized />
                 </div>
-                <p className="mt-8 text-lg tracking-tight text-slate-700">
+                <p className="mt-8 concept-short-description">
                 Wanneer een idee in iemands hoofd zit, is het vaak al volledig gevormd en visueel duidelijk. 
                 Het kan echter moeilijk zijn om dit idee aan anderen uit te leggen, omdat zij niet altijd in staat zijn om het visueel voor zich te zien. 
                 Met behulp van Digital Set Builder streven we ernaar dit probleem op te lossen en de presentatie van het idee te versterken.
@@ -33,7 +33,7 @@ export function DigitalSetBuilder() {
             </Container>
             <Container size='lg' className="mt-24 flex flex-row justify-between items-center">
                 <div className='w-1/2'>
-                    <p className="font-display text-5xl font-extrabold tracking-tight text-slate-900">
+                    <p className="font-display concept-subtitle">
                         Creëer je set   
                     </p>
                     <ul role="list" className="mt-8 space-y-3">
@@ -49,10 +49,12 @@ export function DigitalSetBuilder() {
                             ))}
                     </ul>
                 </div>
-                <Image src={chairEdit} alt="" unoptimized height="350" width="350" />        
+                <div className='overflow-hidden rounded-lg'>
+                    <Image src={chairEdit} alt="" unoptimized height="350" width="350" />
+                </div>       
             </Container>
             <Container className="mt-16">
-                <p className="font-display text-5xl font-extrabold tracking-tight text-slate-900">
+                <p className="font-display concept-subtitle">
                     Loop rond in je omgeving en speel je idee uit
                 </p>
                 <p className="mt-8 text-lg tracking-tight text-slate-700">
@@ -71,8 +73,10 @@ export function DigitalSetBuilder() {
                             ))}
                 </ul>
                 <div className="overflow-hidden rounded-lg mt-16">
-                    <Image src={presenting} alt="" unoptimized />
-                </div>       
+                    <Image src={presenting} alt="" unoptimized width="800"/>
+                </div>
+                </Container> 
+                <Container className="mt-16">  
                 <p className="font-display text-5xl font-extrabold tracking-tight text-slate-900">
                     Technologie
                 </p>
@@ -93,7 +97,6 @@ export function DigitalSetBuilder() {
                             ))}
                 </ul>
             </Container>
-
         </section>
     )
 }

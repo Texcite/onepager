@@ -46,7 +46,7 @@ export function NavBar() {
       let newActiveIndex = null
       let elements = sections.map(({ id }) => document.getElementById(id))
       let bodyRect = document.body.getBoundingClientRect()
-      let offset = bodyRect.top + navBarRef.current.offsetHeight + 1
+      let offset = bodyRect.bottom + navBarRef.current.offsetHeight + 1
 
       if (window.scrollY >= Math.floor(bodyRect.height) - window.innerHeight) {
         setActiveIndex(sections.length - 1)
@@ -55,7 +55,7 @@ export function NavBar() {
 
       for (let index = 0; index < elements.length; index++) {
         if (
-          window.scrollY >= elements[index].getBoundingClientRect().top - offset
+          window.scrollY >= elements[index].getBoundingClientRect().bottom + 100
         ) {
           newActiveIndex = index
         } else {
@@ -78,7 +78,7 @@ export function NavBar() {
   }, [])
 
   return (
-    <div ref={navBarRef} className="sticky top-0 z-50">
+    <div ref={navBarRef} className="fixed w-full bottom-0 z-50">
       <Popover className="sm:hidden">
         {({ open }) => (
           <>
@@ -152,8 +152,9 @@ export function NavBar() {
               <Link
                 href={`#${section.id}`}
                 className={clsx(
+                    "font-bold",
                   'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
-                  sectionIndex === activeIndex
+                  sectionIndex === activeIndex -1
                     ? 'border-blue-600 bg-blue-50 text-blue-600 before:text-blue-600'
                     : 'border-transparent before:text-slate-500 hover:bg-blue-50/40 hover:before:text-slate-900'
                 )}
