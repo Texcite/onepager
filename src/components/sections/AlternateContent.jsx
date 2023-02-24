@@ -52,7 +52,7 @@ export default function AlternateContent({features}) {
                             >
                                 <h3 className="mt-8 font-display text-5xl font-extrabold  text-slate-900 ">{feature.name}</h3>
 
-                                <p className="concept-body-text">{feature.description}</p>
+                                <p className="mt-4 concept-body-text">{feature.description}</p>
                             </div>
                             <div
                                 className={classNames(

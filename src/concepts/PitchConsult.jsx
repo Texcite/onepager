@@ -117,7 +117,7 @@ export function PitchConsult() {
                     {
                         name: 'Minimal and thoughtful',
                         description: "Ideeën bedenken kan iedereen. Wanneer je het idee wilt uitwerken kan je er echter al snel achter komen dat je idee niet zo sterk was dan dat je dacht. Je moet dus nog aan het werk om je idee perfect te maken. Pitch Consult helpt je hierbij.\n" +
-                            "\n" +  "\n" +
+                            "\n" + "\n" +
                             "Pitch Consult is een online chatbot en jou sparring partner tijdens het uitwerken van je idee.",
                         imageSrc: '/assets/pitch-consult/screen-1.png',
                         imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
@@ -161,6 +161,33 @@ export function PitchConsult() {
                         reverse: false
                     }
                 ]}/>
+            </Container>
+            <Container size="lg" className="mt-16 flex justify-center">
+                <div className="w-1/2">
+                    <h2 className="concept-title">
+                        Hoe werkt het?
+                    </h2>
+                    <p className="mt-4 concept-body-text">
+                        Pitch Consult is een AI aangedreven chatbot die, op basis van een databse van het NPO met eerder
+                        gefaalde/geslaagde serie ideeën, Feedback geeft op je idee. Dit doet hij door series, rapporten
+                        van de genremanager en inzendings documenten te analyseren. Dit vergelijkt hij vervolgens met
+                        jouw idee om zo accurate feedback te geven!
+                    </p>
+                    <h3 className="concept-heading">
+                        Technologie
+                    </h3>
+                    <ul role="list" className="mt-8 space-y-3">
+                        {["GPT-3.5-model - OpenAI",
+                            "Deep Neural Network",
+                            "Python (voor machine learning) en C++"].map((feature) => (
+                            <li key={feature} className="flex font-semibold">
+                                <CheckIcon className="h-8 w-8 flex-none fill-blue-500"/>
+                                <span className="ml-4">{feature}</span>
+                            </li>
+                        ))}
+                    </ul>
+
+                </div>
             </Container>
         </section>
     )
