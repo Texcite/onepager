@@ -1,6 +1,6 @@
-import { Container } from './Container'
-import { Expandable } from './Expandable'
-import { SectionHeading } from './SectionHeading'
+import { Container } from '../components/Container'
+import { Expandable } from '../components/Expandable'
+import { SectionHeading } from '../components/SectionHeading'
 
 const tableOfContents = {
   'Concepten': {

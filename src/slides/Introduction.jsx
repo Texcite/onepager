@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import {CheckIcon} from './CheckIcon'
-import {Container} from './Container'
+import {CheckIcon} from '../components/CheckIcon'
+import {Container} from '../components/Container'
 
 export function Introduction() {
     return (

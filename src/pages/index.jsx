@@ -2,14 +2,14 @@ import Head from 'next/head'
 
 import {Author} from '../components/Author'
 import {Footer} from '../components/Footer'
-import {Introduction} from '../components/Introduction'
+import {Introduction} from '../slides/Introduction'
 import {NavBar} from '../components/NavBar'
 import {PitchConsult} from '../concepts/PitchConsult'
 import {ImmersiveStoryBoard} from '../concepts/ImmersiveStoryboard'
 import {DigitalSetBuilder} from '../concepts/DigitalSetBuilder'
-import {TableOfContents} from '../components/TableOfContents'
+import {TableOfContents} from '../slides/TableOfContents'
 import {FancyHero} from "../components/heros/FancyHero";
-import {MeetOurTeam} from "../components/MeetOurTeam";
+import {MeetOurTeam} from "../slides/MeetOurTeam";
 
 export default function Home() {
     return (
