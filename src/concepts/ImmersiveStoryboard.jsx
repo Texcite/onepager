@@ -77,36 +77,31 @@ export function ImmersiveStoryBoard() {
         <div className='overflow-hidden rounded-lg'>
           <Image src={storyboard} alt="" unoptimized height="350" width="auto" />
         </div>
-        <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+        <p className="concept-subtitle">
           Maak een immersive ervaring van jouw concept of idee!
         </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
+        <p className="mt-4 concept-body-text">
           Om een idee vanuit je hoofd naar iets visuals te maken kan lastig zijn. Daarom gebruiken veel mensen een storyboard om hun idee visueel te maken. Dit is echter niet altijd even makkelijk voor iedereen. Het is dan soms ook lastig om je idee te visualiseren in een storyboard. AI Video Interactive Storyboard (AVIS) is een tool die je kan helpen om jouw scene in een interactieve manier visual te maken. Met behulp van AI wordt jouw scene, aan de hand van een omschrijving van je idee, omgezet tot een video. Dit zorgt voor een visueel beeld van je storyboard meet een interactieve twist.
         </p>
       </Container>
-      <Container className="mt-16 py-32">
-        <p className="font-display concept-subtitle">
-          Hoe werkt het
-        </p>
-        <div className="flex items-center">
-          <div className='mx-8'>
-            <ul role="list" className="mt-8 space-y-3">
-              {[
-                'Beschrijf een scene die jij wilt gebruiken in je storyboard',
-                'De AI geeft 4 opties waar je uit kan kiezen',
-                'Kies de optie die het beste bij jouw scene past',
-              ].map((feature) => (
-                <li key={feature} className="flex">
-                  <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
-                  <span className="ml-4 concept-body-text">{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="overflow-hidden rounded-lg">
-            <Image src={kitten} alt="" unoptimized width="400" />
-          </div>
+      <Container size="lg" className="mt-16 flex flex-row items-center justify-between">
+        <div>
+          <h3 className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 ">Hoe werkt
+            het?</h3>
+          <ul role="list" className="mt-8 space-y-3">
+            {[
+              'Beschrijf een scene die jij wilt gebruiken in je storyboard',
+              'De AI geeft 4 opties waar je uit kan kiezen',
+              'Kies de optie die het beste bij jouw scene past',
+            ].map((feature) => (
+              <li key={feature} className="flex font-semibold">
+                <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+                <span className="ml-4">{feature}</span>
+              </li>
+            ))}
+          </ul>
         </div>
+        <Image src={kitten} height={400} width={400} alt="Screenshot" />
       </Container>
       <Container className="mt-16 py-32">
         <p className="font-display concept-subtitle">
@@ -138,8 +133,20 @@ export function ImmersiveStoryBoard() {
           Technologie
         </p>
         <p className="mt-8 concept-body-text">
-          Avis wordt als een web-applicatie ontwikkelen die gebruik maakt van een AI die getrained is in het maken van video generaties. Hierbij gaan we react gebruiken om de website te bouwen vanwege de snelheid en flexibiliteit.
+          Avis wordt ontwikkeld als een web-applicatie die gebruik maakt van AI die getraind is in het genereren van video's. Hierbij gaan we react gebruiken om de website te bouwen vanwege de snelheid en flexibiliteit.
         </p>
+        <ul role="list" className="mt-8 space-y-3">
+          {[
+            "Dall-E - OpenAI",
+            "Kaiber/Neural Frames (onder voorbehoud)",
+            "React",
+          ].map((feature) => (
+            <li key={feature} className="flex font-semibold">
+              <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+              <span className="ml-4">{feature}</span>
+            </li>
+          ))}
+        </ul>
       </Container>
 
     </section>
