@@ -186,7 +186,6 @@ export function PitchConsult() {
                             </li>
                         ))}
                     </ul>
-
                 </div>
             </Container>
         </section>
