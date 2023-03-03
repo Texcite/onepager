@@ -7,6 +7,11 @@ import discordImage from '../images/resources/discord.svg'
 import figmaImage from '../images/resources/figma.svg'
 import videoPlayerImage from '../images/resources/video-player.svg'
 import AlternateContent from "../components/sections/AlternateContent";
+import { CheckIcon } from '../components/CheckIcon.jsx'
+import kitten from '../images/resources/ai-video-interactive-storyboard/kitten.gif'
+import storyboard from '../images/resources/ai-video-interactive-storyboard/storyboard.png'
+import storyboard1 from '../images/resources/ai-video-interactive-storyboard/storyboard-1.gif'
+import storyboard2 from '../images/resources/ai-video-interactive-storyboard/storyboard-2.gif'
 
 const immersiveStoryboard = [
   {
@@ -69,33 +74,74 @@ export function ImmersiveStoryBoard() {
         <SectionHeading number="3" id="immersive-storyboard-title">
           Immersive Storyboard
         </SectionHeading>
+        <div className='overflow-hidden rounded-lg'>
+          <Image src={storyboard} alt="" unoptimized height="350" width="auto" />
+        </div>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
           Maak een immersive ervaring van jouw concept of idee!
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+          Om een idee vanuit je hoofd naar iets visuals te maken kan lastig zijn. Daarom gebruiken veel mensen een storyboard om hun idee visueel te maken. Dit is echter niet altijd even makkelijk voor iedereen. Het is dan soms ook lastig om je idee te visualiseren in een storyboard. AI Video Interactive Storyboard (AVIS) is een tool die je kan helpen om jouw scene in een interactieve manier visual te maken. Met behulp van AI wordt jouw scene, aan de hand van een omschrijving van je idee, omgezet tot een video. Dit zorgt voor een visueel beeld van je storyboard meet een interactieve twist.
         </p>
       </Container>
-      <Container size="lg" className="mt-16">
-        <AlternateContent features={[
-          {
-            name: 'Minimal and thoughtful',
-            description:
-                'Our laptop sleeve is compact and precisely fits 13" devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-01.jpg',
-            imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
-          },
-          {
-            name: 'Refined details',
-            description:
-                'We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-02.jpg',
-            imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
-          },
-        ]}/>
+      <Container className="mt-16 py-32">
+        <p className="font-display concept-subtitle">
+          Hoe werkt het
+        </p>
+        <div className="flex items-center">
+          <div className='mx-8'>
+            <ul role="list" className="mt-8 space-y-3">
+              {[
+                'Beschrijf een scene die jij wilt gebruiken in je storyboard',
+                'De AI geeft 4 opties waar je uit kan kiezen',
+                'Kies de optie die het beste bij jouw scene past',
+              ].map((feature) => (
+                <li key={feature} className="flex">
+                  <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+                  <span className="ml-4 concept-body-text">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="overflow-hidden rounded-lg">
+            <Image src={kitten} alt="" unoptimized width="400" />
+          </div>
+        </div>
       </Container>
+      <Container className="mt-16 py-32">
+        <p className="font-display concept-subtitle">
+          Hoe kan jouw scene eruit komen te zien?
+        </p>
+        {/* grid 3x2 where first row is mp4 videos and second row text */}
+        <div className="mt-8 grid grid-cols-2 gap-8 justify-items-center">
+          <div className="col-span-1">
+            <Image src={storyboard1} alt="" unoptimized width="200" />
+          </div>
+          <div className="col-span-1">
+            <Image src={storyboard2} alt="" unoptimized width="200" />
+          </div>
+          <div className="col-span-1">
+            <p className="mt-8 concept-body-text">
+              A women walking outside into a beautiful sunset, in the style of 3D, octane render, 8k, ray-tracing, blender, hyper-detailed"
+            </p>
+          </div>
+          <div className="col-span-1">
+            <p className="mt-8 concept-body-text">
+              A women walking on the sidewalk, car passing by her, focus to the car, in the style of 3D, octane render, 8k, ray-tracing, blender, hyper-detailed.
+            </p>
+          </div>
+        </div>
+
+      </Container>
+      <Container className="mt-16 py-32">
+        <p className="font-display concept-subtitle">
+          Technologie
+        </p>
+        <p className="mt-8 concept-body-text">
+          Avis wordt als een web-applicatie ontwikkelen die gebruik maakt van een AI die getrained is in het maken van video generaties. Hierbij gaan we react gebruiken om de website te bouwen vanwege de snelheid en flexibiliteit.
+        </p>
+      </Container>
+
     </section>
   )
 }
