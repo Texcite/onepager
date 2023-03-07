@@ -25,7 +25,7 @@ export default function Home() {
             </Head>
             <FancyHero/>
             <MeetOurTeam/>
-            {/*<Introduction/>*/}
+            <Introduction/>
             <TableOfContents/>
             {/*<Testimonial*/}
             {/*  id="testimonial-from-tommy-stroman"*/}
