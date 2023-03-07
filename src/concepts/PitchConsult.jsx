@@ -108,14 +108,13 @@ export function PitchConsult() {
                     Een chatbot en jou sparring partner tijdens het uitwerken van je idee.
                 </h2>
                 <p className="concept-short-description">
-                    “Everything Starts as a Square” is available in two different packages
-                    so you can pick the one that’s right for you.
+                Pitch Consult is een online chatbot en jouw sparring partner tijdens het uitwerken van je idee. Door middel van een database met eerder geslaagde/gefaalde series van het NPO kan er feedback gegeven worden door de chatbot. Zo kan je nieuwe inzichten krijgen over je idee waar je eerst misschien niet over nagedacht had.
                 </p>
             </Container>
             <Container size="lg" className="mt-16">
                 <AlternateContent features={[
                     {
-                        name: 'Minimal and thoughtful',
+                        name: 'Behulpzame chatbot',
                         description: "Ideeën bedenken kan iedereen. Wanneer je het idee wilt uitwerken kan je er echter al snel achter komen dat je idee niet zo sterk was dan dat je dacht. Je moet dus nog aan het werk om je idee perfect te maken. Pitch Consult helpt je hierbij.\n" +
                             "\n" + "\n" +
                             "Pitch Consult is een online chatbot en jou sparring partner tijdens het uitwerken van je idee.",
