@@ -50,15 +50,10 @@ export function AdviesPitch() {
                 <p className="mt-8 concept-body-text">
                 Op basis van de feedback die we hadden gekregen hebben we ervoor gekozen om het interactive storyboard concept uit te werken.
                 </p>
-
-                
-                
-            </Container>
-            <Container>
-                <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
+                <p className="font-display concept-heading">
                     Onze oplossing
                 </p>
-                <p className="mt-4 concept-body-text">
+                <p className="mt-8 concept-body-text">
                     Voor veel mensen kan het lastig zijn om een idee visueel te maken vanuit hun hoofd. Een storyboard kan hierbij helpen, maar dit is niet altijd even makkelijk voor iedereen. Daarom is er nu de AI Video Interactive Storyboard (AVIS) tool. Met behulp van AI kan je een scene beschrijven en deze wordt omgezet in een interactieve video. Zo krijg je een visueel beeld van je storyboard met een interactieve twist.
                     <br /><br />
                     Hoe werkt het? Beschrijf simpelweg de scene die je in je storyboard wilt opnemen en de AI verwerkt dit om een video te genereren. Eenmaal klaar met het maken van je storyboard kan je het downloaden als een standalone html pagina voor makkelijke distributie. Het product is een web-applicatie die gebruik maakt van AI die getraind is om video's te genereren, gebouwd met react voor snelheid en flexibiliteit.
