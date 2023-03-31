@@ -23,15 +23,6 @@ export function TableOfContents() {
         {/* <SectionHeading number="1" id="programma-title">
           Programma
         </SectionHeading> */}
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Onze oplossingen 
-        </p>
-        <p className="mt-4 concept-body-text">
-          Wij zijn gekomen tot drie soorten concepten. 
-          Het eerste concept is een out of the box concept op basis van de design vraag. 
-          Het tweede concept sluit nauw op de vraag en 
-          het laatste concept slaat op de vraag met de suggestie van de NPO over Artificiële intelligence.
-        </p>
         <Expandable>
           {({ isExpanded }) => (
             <>
