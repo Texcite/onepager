@@ -54,7 +54,7 @@ export function Demonstratie() {
                         <Step
                             number={3}
                             video={"/assets/3-demo.mp4"}
-                            title={"New board toevoegen"}
+                            title={"Prompt instellen"}
                             description={"Beschrijf de situatie van jouw scene en laat een paneel genereren voor jouw storyboard. "}
                         />
                         <Step
