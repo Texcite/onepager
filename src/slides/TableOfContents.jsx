@@ -3,10 +3,12 @@ import { Expandable } from '../components/Expandable'
 import { SectionHeading } from '../components/SectionHeading'
 
 const tableOfContents = {
-  'Concepten': {
-    'Digital set builder': 1,
-    'Immersive storyboard': 2,
-    'Pitch consult': 3,
+  'Inhoudsopgave': {
+    'Advies Vorige Pitch': 1,
+    // 'Design Keuzes voor het product': 2,
+    'Ontwikkeling van het product': 2,
+    'Demonstratie': 3,
+    'Eventuele verbeterpunt product': 4,
   }
 }
 

@@ -13,9 +13,11 @@ const sections = [
       </>
     ),
   },
-  { id: 'digital-set-builder', title: 'Digital set builder\n' },
-  { id: 'immersive-storyboard', title: 'Immersive Storyboard' },
-  { id: 'pitch-consult', title: 'Pitch consult' },
+  { id: 'advies-pitch', title: 'Advies vorige pitch' },
+  { id: 'ontwikkeling-product', title: 'Ontwikkeling' },
+  { id: 'demonstratie', title: 'Demonstratie' },
+  { id: 'verbeterpunten', title: 'Verbeterpunten' },
+  
 ]
 
 function MenuIcon({ open, ...props }) {
