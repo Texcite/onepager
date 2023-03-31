@@ -13,9 +13,9 @@ export function Demonstratie() {
                         src={video}
                         height={800}
                         width={800}
-                        playsInline={true}
                         loop={true}
                         muted={true}
+                        autoPlay={true}
                     />
                 </div>
                 <div className="w-full flex items-center justify-center">
@@ -41,37 +41,37 @@ export function Demonstratie() {
                     <section className="flex flex-wrap space-y-8 justify-center items-center">
                         <Step
                             number={1}
-                            video={"/assets/demo-1.gif"}
+                            video={"/assets/1-demo.mp4"}
                             title={"Timeline"}
                             description={"Dit is het overzicht van jouw storyboard. Op deze pagina kan jij de van jouw storyboard bekijken, nieuwe panelen toevoegen en jouw verhaal afspelen."}
                         />
                         <Step
                             number={2}
-                            video={"/assets/demo-2.gif"}
+                            video={"/assets/2-demo.mp4"}
                             title={"Nieuwe paneel maken\n"}
                             description={"Klik op de blauwe plus knop om een nieuwe paneel aan te maken."}
                         />
                         <Step
                             number={3}
-                            video={"/assets/demo-3.gif"}
+                            video={"/assets/3-demo.mp4"}
                             title={"New board toevoegen"}
                             description={"Beschrijf de situatie van jouw scene en laat een paneel genereren voor jouw storyboard. "}
                         />
                         <Step
                             number={4}
-                            video={"/assets/demo-4.gif"}
+                            video={"/assets/4-demo.mp4"}
                             title={"Genereren (laadscherm)"}
                             description={"Beschrijf je situatie en druk op de knop 'genereer' om het process te starten."}
                         />
                         <Step
                             number={5}
-                            video={"/assets/demo-5.gif"}
+                            video={"/assets/5-demo.mp4"}
                             title={"Herorder je panelen voor de juiste volgorde"}
                             description={"Start with your own image or audio to bring existing content to life."}
                         />
                         <Step
                             number={6}
-                            video={"/assets/demo-6.gif"}
+                            video={"/assets/6-demo.mp4"}
                             title={"Exporteer je immersive storyboard"}
                             description={"Exporteer je project en deel jouw verhaal met de wereld"}
                         />
