@@ -33,7 +33,7 @@ export function Demonstratie() {
             className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
         >
             <Container size='lg'>
-                <SectionHeading number="2" id="demonstratie-title">
+                <SectionHeading number="3" id="demonstratie-title">
                     Demonstratie
                 </SectionHeading>
 
