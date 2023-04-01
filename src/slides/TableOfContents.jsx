@@ -6,9 +6,9 @@ const tableOfContents = {
   'Inhoudsopgave': {
     'Advies Vorige Pitch': 1,
     // 'Design Keuzes voor het product': 2,
-    'Ontwikkeling van het product': 2,
-    'Demonstratie': 3,
-    'Eventuele verbeterpunt product': 4,
+    // 'Ontwikkeling van het product': 2,
+    'Demonstratie': 2,
+    'Eventuele verbeterpunt product': 3,
   }
 }
 

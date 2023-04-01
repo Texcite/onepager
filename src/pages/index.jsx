@@ -30,7 +30,7 @@ export default function Home() {
 
 
             <AdviesPitch/>
-            <OntwikkelingProduct/>
+            {/* <OntwikkelingProduct/> */}
             <Demonstratie/>
             <Verbeterpunten />
 

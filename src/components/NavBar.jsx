@@ -14,7 +14,7 @@ const sections = [
     ),
   },
   { id: 'advies-pitch', title: 'Advies vorige pitch' },
-  { id: 'ontwikkeling-product', title: 'Ontwikkeling' },
+  // { id: 'ontwikkeling-product', title: 'Ontwikkeling' },
   { id: 'demonstratie', title: 'Demonstratie' },
   { id: 'verbeterpunten', title: 'Verbeterpunten' },
   
