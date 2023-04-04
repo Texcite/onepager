@@ -10,6 +10,11 @@ import {DigitalSetBuilder} from '../concepts/DigitalSetBuilder'
 import {TableOfContents} from '../slides/TableOfContents'
 import {FancyHero} from "../components/heros/FancyHero";
 import {MeetOurTeam} from "../slides/MeetOurTeam";
+import {AdviesPitch} from "../sections/AdviesPitch";
+import {OntwikkelingProduct} from '../sections/OntwikkelingProduct'
+import {Demonstratie} from '../sections/Demonstratie'
+import {Verbeterpunten} from '../sections/Verbeterpunten'
+import {DesignKeuzes} from '../sections/DesignKeuzes'
 
 export default function Home() {
     return (
@@ -39,6 +44,12 @@ export default function Home() {
             <ImmersiveStoryBoard/>
             {/*<FreeChapters />*/}
             <PitchConsult/>
+            <AdviesPitch/>
+            <DesignKeuzes/>
+            {/* design keuzes hier */}
+            <OntwikkelingProduct/>
+            <Demonstratie/>
+            <Verbeterpunten/>
             <NavBar/>
             {/*<Testimonials />*/}
             {/* <Author/> */}
