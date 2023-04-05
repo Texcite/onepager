@@ -27,7 +27,7 @@ export function FancyHero() {
                         Texcite
                     </h1>
                     <p className="mt-6 concept-body-text">
-                        Media module
+                        Immersive storyboard prototype
                     </p>
                     {/* <div className="mt-10 flex items-center gap-x-6">
                         <a

@@ -11,10 +11,10 @@ export function Verbeterpunten() {
         >
             <Container>
                 <SectionHeading number="9" id="verbeterpunten-title">
-                    Verbeterpunten
+                    Opmerkingen
                 </SectionHeading>
                 <p className="mt-8 concept-title">
-                    Opmerking voor doorontwikkeling
+                    Opmerkingen voor doorontwikkeling
                 </p>
                 <p className="mt-8 concept-short-description">
                 Omdat we een prototype hebben gemaakt zijn er natuurlijk nog onderdelen waar verbeteringen aan toegepast kunnen worden. Zo hebben wij een aantal verbeterpunten in kaart gebracht voor de oplevering van het product.</p>
@@ -30,9 +30,8 @@ export function Verbeterpunten() {
                     API key
                 </p>
                 <p className="mt-8 concept-body-text">
-                    Om gebruik te maken van de API moeten we gebruik maken van de API-key om toegang te krijgen. Het is voor kwaadwillende nu mogelijk om deze API-key te onderscheppen om vervolgens misbruik van te maken. Het is dus belangrijk om na te denken hoe de API-key op een veilige manier gebruikt kan worden.
+                    Om het prototype online te zetten is het belangrijk dat er een API Key voor de stable diffusion API wordt meegestuurd bij verzoeken naar de API. Echter moet er gekeken worden naar een oplossing om de API key niet zichtbaar te maken voor eindgebruikers.               
                 </p>
-
                 <p className="font-display concept-heading">
                     Export
                 </p>
