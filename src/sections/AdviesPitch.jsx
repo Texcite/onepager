@@ -11,10 +11,10 @@ export function AdviesPitch() {
         >
             <Container>
                 <SectionHeading number="5" id="advies-pitch-title">
-                    Advies
+                    Tussenpresentatie feedback
                 </SectionHeading>
                 <p className="mt-8 concept-title">
-                    Advies Vorige Pitch.
+                    Tussenpresentatie feedback
                 </p>
                 <p className="mt-8 concept-short-description">
                     Bij het pitchen van de 3 concepten hebben wij feedback gekregen en een advies over welk concept het meest realistisch was om uit te werken.

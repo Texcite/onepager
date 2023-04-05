@@ -14,7 +14,7 @@ export function Verbeterpunten() {
                     Verbeterpunten
                 </SectionHeading>
                 <p className="mt-8 concept-title">
-                    Eventuele verbeterpunten product
+                    Opmerking voor doorontwikkeling
                 </p>
                 <p className="mt-8 concept-short-description">
                 Omdat we een prototype hebben gemaakt zijn er natuurlijk nog onderdelen waar verbeteringen aan toegepast kunnen worden. Zo hebben wij een aantal verbeterpunten in kaart gebracht voor de oplevering van het product.</p>
@@ -27,10 +27,10 @@ export function Verbeterpunten() {
                 </p>
 
                 <p className="font-display concept-heading">
-                    Styling niet consistent
+                    API key
                 </p>
                 <p className="mt-8 concept-body-text">
-                    Omdat we weinig tijd hadden om het prototype te maken, hebben we niet veel tijd kunnen besteden aan de styling van het product. Om deze reden zijn er een aantal dingen die niet consistent zijn over de applicatie, zoals buttons en text. In de toekomst kan hier meer tijd aan besteed worden.
+                    Om gebruik te maken van de API moeten we gebruik maken van de API-key om toegang te krijgen. Het is voor kwaadwillende nu mogelijk om deze API-key te onderscheppen om vervolgens misbruik van te maken. Het is dus belangrijk om na te denken hoe de API-key op een veilige manier gebruikt kan worden.
                 </p>
 
                 <p className="font-display concept-heading">

@@ -63,9 +63,10 @@ export function OntwikkelingProduct() {
                 <p className="mt-8 concept-body-text">
                     Met ons groepje hebben we onze web-applicatie opgeleverd met behulp van GitHub. Dit was een geweldige manier om ons project te organiseren en te beheren. We konden elkaars code gemakkelijk bekijken, wijzigingen aanbrengen en problemen oplossen. GitHub bood ook geweldige samenwerkingsfuncties zoals pull requests en code reviews die ons hielpen om kwaliteitscode te schrijven. Door GitHub te gebruiken, waren we in staat om ons project op tijd en zonder problemen op te leveren.
                 </p>
-                <p className="mt-8 concept-body-text">
+                <p className="my-8 concept-body-text">
                     Als opdrachtgever is het gemakkelijk om de code op GitHub te gebruiken die door de studenten is opgeleverd. Het enige wat de opdrachtgever hoeft te doen, is de code van GitHub downloaden en op zijn eigen computer installeren. Hiermee kan hij de web-applicatie op zijn eigen server hosten of op een cloudplatform naar keuze. Dit geeft de opdrachtgever de vrijheid om de applicatie te beheren en aan te passen aan zijn specifieke behoeften. Daarnaast biedt de code op GitHub de mogelijkheid om bugs op te lossen en nieuwe functies toe te voegen zonder afhankelijk te zijn van de ontwikkelaars.
                 </p>
+                <a href="https://github.com/Texcite/immersive-storyboard" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Github - Immersive Storyboard</a>
             </Container>
         </section>
     )

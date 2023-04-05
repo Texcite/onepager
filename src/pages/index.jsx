@@ -21,11 +21,11 @@ export default function Home() {
         <>
             <Head>
                 <title>
-                    Texcite - Tussentijdse presentatie
+                    Texcite - Media module
                 </title>
                 <meta
                     name="description"
-                    content="Concept presentatie"
+                    content=" Texcite - Media module"
                 />
             </Head>
             <FancyHero/>
