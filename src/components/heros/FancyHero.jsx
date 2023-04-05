@@ -27,16 +27,16 @@ export function FancyHero() {
                         Texcite
                     </h1>
                     <p className="mt-6 concept-body-text">
-                        Tussenpresentatie concepten overzicht.
+                        Immersive storyboard prototype
                     </p>
-                    <div className="mt-10 flex items-center gap-x-6">
+                    {/* <div className="mt-10 flex items-center gap-x-6">
                         <a
                             href="#programma"
                             className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                         Bekijk concepten
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="mx-auto bg-green-800 mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-32">
                     <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">

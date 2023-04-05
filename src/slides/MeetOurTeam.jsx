@@ -3,27 +3,32 @@ const people = [
     {
         name: 'Nigel Ritfeld',
         role: 'Contact persoon/ Developer',
+        email: '1004416@hr.nl',
         imageUrl:
             'https://avatars.githubusercontent.com/u/50368040?s=400&u=31d7f6a85296ca6e7762ee25214b0b97a991a0f2&v=4',
     },
     {
         name: 'Stefan de Gier',
         role: 'Project manager',
+        email: '1005530@hr.nl',
         imageUrl: 'https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61374b8c7eb35f00692689fe/cc223378-0ef1-4851-a4ec-ae0e8440dc8e/128'
     },
     {
         name: 'Owen Brouwer',
         role: 'Project manager',
+        email: '1004729@hr.nl',
         imageUrl: '/team/owen.webp'
     },
     {
         name: 'Olivier Vromans',
         role: 'Developer',
+        email: '1017098@hr.nl',
         imageUrl: '/team/olivier.webp'
     },
     {
         name: 'Steef van Deventer',
         role: 'Contact persoon/ Developer',
+        email: '1003220@hr.nl',
         imageUrl:'/team/steef.webp'
     },
     // More people...
@@ -47,6 +52,7 @@ export function MeetOurTeam() {
                                 <div>
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                     <p className="text-sm font-semibold leading-6 text-blue-600">{person.role}</p>
+                                    <p className="text-sm font-semibold leading-6 text-gray-900">{person.email}</p>
                                 </div>
                             </div>
                         </li>
